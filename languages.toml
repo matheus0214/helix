@@ -1,3 +1,10 @@
+[language-server]
+biome = { command = "biome", args = ["lsp-proxy"] }
+
 [[language]]
 name = "typescript"
-language-servers = [ "typescript-language-server" ]
+language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
+
+[[language]]
+name = "javascript"
+language-servers = [ { name = "typescript-language-server", except-features = [ "format" ] }, "biome" ]
