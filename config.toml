@@ -1,0 +1,11 @@
+theme = "tokyonight"
+
+[editor]
+line-number = "relative"
+bufferline = "multiple"
+cursorline = true
+rulers = [120]
+true-color = true
+
+[editor.lsp]
+display-messages = true
